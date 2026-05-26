@@ -78,7 +78,7 @@ def evaluate(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--image-folder", type=str, default="/mnt/dolphinfs/ssd_pool/docker/user/hadoop-mtcv/lihongyu/projects/aerial_chat/datasets/huggingface.co/datasets/MBZUAI/GeoChat_Instruct/share/softwares/kartik/GeoChat_finetuning/final_images_llava")
+    parser.add_argument("--image-folder", type=str, default="./data/geochat_images")
     parser.add_argument("--question-file", type=str, default="tables/question.jsonl")
     parser.add_argument("--answers-file", type=str, default="answer.jsonl")
     parser.add_argument("--res", type=float, default=100.)

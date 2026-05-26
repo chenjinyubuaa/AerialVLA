@@ -7,8 +7,8 @@ from tqdm import tqdm
 
 from llava.eval.aerialchat.utils import compute_iou, get_origin_action, crop_image_from_corners, move_view_corners
 
-data_path = "/mnt/dolphinfs/ssd_pool/docker/user/hadoop-mtcv/huitianrui/projects/project_2024/code/Aerial-Vision-and-Dialog-Navigation/datasets/AVDN/annotations/train_data.json"
-image_path = "/mnt/dolphinfs/ssd_pool/docker/user/hadoop-mtcv/huitianrui/projects/project_2024/code/Aerial-Vision-and-Dialog-Navigation/datasets/AVDN/train_images"
+data_path = "./data/train_data.json"
+image_path = "./data/train_images"
 grid_size = 9
 altitude_grid_size = 20
 

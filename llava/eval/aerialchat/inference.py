@@ -255,13 +255,13 @@ def eval_model(args, model=None, tokenizer=None, image_processor=None):
         
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-base", type=str, default="/mnt/data3/cjy/AerialChat-Llava-OV-main/llava-onevision-qwen2-0.5b-ov")
-    parser.add_argument("--model-path-stage1", type=str, default="/mnt/data3/cjy/AerialChat-Llava-OV/output/debug-grid27")
+    parser.add_argument("--model-base", type=str, default="./models/llava-onevision-qwen2-7b-ov")
+    parser.add_argument("--model-path-stage1", type=str, default="./checkpoints/geochat-stage2")
     parser.add_argument("--model-path-stage2", type=str, default="output/aerialchat/llava-onevision-qwen2-7b-si-max9-lora-09-07-aerial-chat-re")
 
     parser.add_argument("--output-dir", type=str, default=None)
-    parser.add_argument("--eval-data-path", type=str, default="/mnt/data3/cjy/AerialChat-Llava-OV/sub_aerial_data/train_1094.json")
-    parser.add_argument("--image-folder", type=str, default="/mnt/data3/cjy/AerialChat-Llava-OV/sub_aerial_data/")
+    parser.add_argument("--eval-data-path", type=str, default="./data/train_1094.json")
+    parser.add_argument("--image-folder", type=str, default="./data/train_images")
     
     parser.add_argument("--max_action_len",type=int, default=10)
     parser.add_argument("--batch_size",type=int, default=1)

@@ -10,12 +10,12 @@ import math
 from llava.eval.aerialchat.utils import compute_iou, get_origin_action, crop_image_from_corners, move_view_corners
 from llava.eval.aerialchat.utils import get_map_info_dict, get_dialog_data
 
-data_path = "/mnt/dolphinfs/ssd_pool/docker/user/hadoop-mtcv/huitianrui/projects/project_2024/code/Aerial-Vision-and-Dialog-Navigation/datasets/AVDN/annotations/train_data.json"
-image_path = "/mnt/dolphinfs/ssd_pool/docker/user/hadoop-mtcv/huitianrui/projects/project_2024/code/Aerial-Vision-and-Dialog-Navigation/datasets/AVDN/train_images"
-aug_data_path = '/mnt/dolphinfs/ssd_pool/docker/user/hadoop-mtcv/lihongyu/projects/aerial_chat/code/LLaVA-NeXT/output/aerialchat/llava-onevision-qwen2-7b-ov-max1-lora-09-11-aerialchat-grid9-altitude-20-norm-sub-dagger/epoch_1/argument_datas'
+data_path = "./data/train_data.json"
+image_path = "./data/train_images"
+aug_data_path = './output/aerialchat/epoch_1/argument_datas'
 grid_size = 9
 altitude_grid_size = 20
-origin_data_path = "/mnt/dolphinfs/ssd_pool/docker/user/hadoop-mtcv/lihongyu/projects/aerial_chat/code/LLaVA-NeXT/train_aerial_instrucion_grid_9_altitude_20_sub.json"
+origin_data_path = "./data/train_aerial_instrucion_grid_9_altitude_20_sub.json"
 output_data_path = f'aug_train_aerial_instrucion_grid_{grid_size}_altitude_{altitude_grid_size}.json'
 
 def transforms_augment_data(
