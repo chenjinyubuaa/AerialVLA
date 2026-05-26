@@ -1,0 +1,5 @@
+针对本项目的代码进行整理：
+1.冗余代码删除：
+主训练逻辑入口是finetune_lora_remote.sh。
+定位出在运行finetune_lora_remote.sh过程中不需要使用的冗余训练脚本和python文件。但是不要删除和evaluate相关的内容。
+
